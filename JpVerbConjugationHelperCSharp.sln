@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JpVerbConjugationHelperCSharp", "JpVerbConjugationHelperCSharp\JpVerbConjugationHelperCSharp.csproj", "{97D329BC-3823-41E6-9E24-F09BC4C619B2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JpVerbConjugationHelperCSharp.Test", "JpVerbConjugationHelperCSharp.Test\JpVerbConjugationHelperCSharp.Test.csproj", "{AA7487EE-639F-4889-B4CE-EC4D438A6A54}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{97D329BC-3823-41E6-9E24-F09BC4C619B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97D329BC-3823-41E6-9E24-F09BC4C619B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97D329BC-3823-41E6-9E24-F09BC4C619B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97D329BC-3823-41E6-9E24-F09BC4C619B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA7487EE-639F-4889-B4CE-EC4D438A6A54}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA7487EE-639F-4889-B4CE-EC4D438A6A54}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA7487EE-639F-4889-B4CE-EC4D438A6A54}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA7487EE-639F-4889-B4CE-EC4D438A6A54}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
