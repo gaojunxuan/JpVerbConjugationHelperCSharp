@@ -248,6 +248,34 @@ namespace JpVerbConjugationHelperCSharp
                 return MoveToALine(word) + "せ";
             }
         }
+        static string PrepMasuForm(string word)
+        {
+            word = word.Replace(" ", "").Replace("　", "");
+            if (IsIchidan(word))
+            {
+                return word.Substring(0, word.Length - 1) + "ま";
+            }
+            else if (IsKuruVerb(word))
+            {
+                if (word == "来る")
+                {
+                    return "来ま";
+                }
+                return "きま";
+            }
+            else if (IsSuruVerb(word))
+            {
+                if (word == "為る")
+                {
+                    return "しま";
+                }
+                return word.Substring(0, word.Length - 2) + "しま";
+            }
+            else
+            {
+                return MoveToILine(word) + "ま";
+            }
+        }
         static string MoveToALine(string word)
         {
             string okuri = word.Substring(word.Length - 1);
@@ -424,7 +452,14 @@ namespace JpVerbConjugationHelperCSharp
                 return MoveToOLine(word) + "う";
             }
         }
-
+        public static string GetMasuForm(string word)
+        {
+            return PrepMasuForm(word) + "す";
+        }
+        public static string GetMasuNegative(string word)
+        {
+            return PrepMasuForm(word) + "せん";
+        }
         #endregion
     }
 }
