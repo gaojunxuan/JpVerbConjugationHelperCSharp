@@ -7,7 +7,7 @@ namespace JpVerbConjugationHelperCSharp
 {
     public class VerbConjugationHelper
     {
-        static List<string> hira = new List<string>() { "わ", "い", "う", "え", "お", "か", "き", "く", "け", "こ", "さ", "し", "す", "せ", "そ", "た", "ち", "つ", "て", "と", "な", "に", "ぬ", "ね", "の", "は", "ひ", "ふ", "へ", "ほ", "ま", "み", "む", "め", "も", "や", "い", "ゆ", "え", "よ", "ら", "り", "る", "れ", "ろ", "わ", "い", "う", "え", "を", "ん" };
+        static List<string> hira = new List<string>() { "わ", "い", "う", "え", "お", "か", "き", "く", "け", "こ", "さ", "し", "す", "せ", "そ", "た", "ち", "つ", "て", "と", "な", "に", "ぬ", "ね", "の", "は", "ひ", "ふ", "へ", "ほ", "ま", "み", "む", "め", "も", "や", "い", "ゆ", "え", "よ", "ら", "り", "る", "れ", "ろ", "わ", "い", "う", "え", "を", "ん", "が", "ぎ", "ぐ", "げ", "ご", "ざ", "じ", "ず", "ぜ", "ぞ", "だ", "ぢ", "づ", "で", "ど", "ば", "び", "ぶ", "べ", "ぼ", "ぱ", "ぴ", "ぷ", "ぺ", "ぽ" };
         #region check
         static bool IsKuruVerb(string word)
         {
@@ -95,7 +95,7 @@ namespace JpVerbConjugationHelperCSharp
             {
                 if (word == "来る")
                 {
-                    return "来な";
+                    return "こな";
                 }
                 else
                 {
@@ -133,7 +133,7 @@ namespace JpVerbConjugationHelperCSharp
             {
                 if (word == "来る")
                 {
-                    return "来られ";
+                    return "こられ";
                 }
                 else
                 {
@@ -167,7 +167,7 @@ namespace JpVerbConjugationHelperCSharp
             {
                 if (word == "来る")
                 {
-                    return "来られ";
+                    return "こられ";
                 }
                 else
                 {
@@ -221,7 +221,7 @@ namespace JpVerbConjugationHelperCSharp
             {
                 if (word == "来る")
                 {
-                    return "来られ";
+                    return "こられ";
                 }
                 else
                 {
@@ -259,7 +259,7 @@ namespace JpVerbConjugationHelperCSharp
             {
                 if (word == "来る")
                 {
-                    return "来ま";
+                    return "きま";
                 }
                 return "きま";
             }
@@ -324,7 +324,7 @@ namespace JpVerbConjugationHelperCSharp
             else
             {
                 var newword = PrepGodanVerbPhoneticChange(word);
-                if (word[word.Length-1] == 'ぐ' || word[word.Length-1] == 'ぬ' || word[word.Length-1] == 'む' || word[word.Length-1] == 'ぶ')
+                if (word[word.Length - 1] == 'ぐ' || word[word.Length - 1] == 'ぬ' || word[word.Length - 1] == 'む' || word[word.Length - 1] == 'ぶ')
                 {
                     return newword + "で";
                 }
@@ -356,7 +356,7 @@ namespace JpVerbConjugationHelperCSharp
             else
             {
                 var newword = PrepGodanVerbPhoneticChange(word);
-                if (word[word.Length-1] == 'ぐ' || word[word.Length - 1] == 'ぬ' || word[word.Length - 1] == 'む' || word[word.Length - 1] == 'ぶ')
+                if (word[word.Length - 1] == 'ぐ' || word[word.Length - 1] == 'ぬ' || word[word.Length - 1] == 'む' || word[word.Length - 1] == 'ぶ')
                 {
                     return newword + "だ";
                 }
@@ -460,6 +460,7 @@ namespace JpVerbConjugationHelperCSharp
         {
             return PrepMasuForm(word) + "せん";
         }
+
         #endregion
     }
 }
